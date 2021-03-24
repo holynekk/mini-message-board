@@ -12,6 +12,7 @@ html{
 
 h1{
   font-size: 3rem;
+  font-family: monospace;
 }
 
 body {
@@ -33,9 +34,33 @@ a {
 
 .mess{
   background-color: white;
+  border: 8px solid rgb(50, 50, 50);
   border-radius: 10px;
   margin: 10px;
   padding: 10px;
+  width: 600px;
+}
+
+.info{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto 20px auto 20px;
+}
+
+.username{
+  font-weight: 900;
+  font-family: monospace;
+}
+
+.text{
+  display: flex;
+  justify-content: flex-start;
+  text-align: start;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 section{
@@ -53,4 +78,10 @@ section{
   font-size: 1.2rem;
   text-decoration: none;
   padding: 10px;
+  font-family: monospace;
+  transition: all 0.2s ease-in-out;
+}
+
+.add-message:hover{
+  background-color: rgb(150, 150, 150);
 }
