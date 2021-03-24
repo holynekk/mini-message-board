@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  header.head-head
+    h1= title
+    p.only-text Ok, give it to me!
+  main.mama
+    section.form-container
+        form(method='POST' action='/new')
+            input(type='text', placeholder='Write the subject', name='title', id='title')
+            textarea(name='description', placeholder='You are free to write anything here. **ANYTHING!**')
+            input(type='text', placeholder='Username', name='username', id='username')
+            button(type='submit' id='submit-button')= 'post'
